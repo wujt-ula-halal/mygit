@@ -59,8 +59,8 @@ ssh -T git@github.com
 
 -------------
 
- 	1. 创建一个文件夹
- 	2. 初始化一个git项目
+1. 创建一个文件夹
+2. 初始化一个git项目
 
 ```bash
 git init
@@ -70,14 +70,34 @@ git init
 
 4. 本地项目和远程项目关联
 
-   ```bash
-   git remote add origin git@github.com:wujt-ula-halal/mygit.git
-   ```
+```bash
+git remote add origin git@github.com:wujt-ula-halal/mygit.git
+```
 
 5. 第一次发布项目
 
-   ```bash
-   git add .      // 文件--> 暂存区(.代表当前目录下所有文件)
-   git commit -m "注释内容"     // 暂存区 --> 本地分支 (默认master分支)
-   git push -u origin master    // 第一次提交 将本地分支 --> 远程分支
-   ```
+```bash
+git add .      // 文件--> 暂存区(.代表当前目录下所有文件)
+git commit -m "注释内容"     // 暂存区 --> 本地分支 (默认master分支)
+git push -u origin master    // 第一次提交 将本地分支 --> 远程分支
+```
+
+6. 从远程仓库复制代码
+
+```bash
+git clone git@github.com:wujt-ula-halal/mygit.git
+```
+
+7. 长期维护项目
+
+```bach
+git add .
+git commit -m ""
+git push origin master
+```
+
+8. 拉取最新代码
+
+```bash
+git pull
+```
